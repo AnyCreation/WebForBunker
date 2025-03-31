@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(37, 38, 39);
+    display: flex;
+    flex-direction: column; /* Размещает элементы вертикально */
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    height: 100vh; /* Высота экрана */
+    margin: 0; /* Убираем отступы */
+
+    /*---*/
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+p {
+    font-size: 100px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    width: 20ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20);
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    
+}
+
+
+
+/*-----------*/
+
+#GetInfo {
+    width: 30%;
+    
+}
+
+
+#GetInfo > input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    background-color: rgb(190, 190, 190);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80%;
+    height: 22px;
+}
+
+#GetInfo > label {
+    color: white;
+}
+
+#GetInfo > button {
+    background-color: rgb(190, 190, 190);
+    width: 32%;
+    height: 22px;
+    border-radius: 8px;
+}
+
+#GetInfo > button:hover {
+    background-color: rgb(160, 160, 160);
+}
