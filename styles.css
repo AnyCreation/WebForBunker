@@ -17,6 +17,9 @@ p {
     margin-bottom: 10px;
     color: white;
     text-align: center;
+    width: 100%;
+
+
     width: 20ch;
     text-wrap: nowrap;
     overflow: hidden;
@@ -62,5 +65,5 @@ p {
 }
 
 #GetInfo > button:hover {
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(133, 133, 133);
 }
