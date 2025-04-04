@@ -1,13 +1,7 @@
 body {
     background-color: rgb(37, 38, 39);
     display: flex;
-    flex-direction: column; /* Размещает элементы вертикально */ 
-    /*
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
-    margin: 0; 
-    
+    flex-direction: column;
 
     /*---*/
     font-family: 'Courier New', Courier, monospace;
@@ -15,15 +9,82 @@ body {
     font-size: 28px;
 }
 
-input {
-    width: 160px;
-    height: 60px;
-    background-color: rgb(59, 59, 59);
-    color: white;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(37, 37, 37);
+    font-size: 50px;
 }
 
+#timer {
+    margin: 5px 0px 5px 0px;
+    transition: transform 1.2s ease;
+}
+
+#timer:hover {
+    transform: scale(1.2);
+}
+
+
+/*--------------*/
+
 table { 
-    border: 4px solid rgb(186, 62, 0);
+    border: 8px solid rgb(26, 25, 25);
+    border-radius: 12px;
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: rgb(29, 29, 29);
+    transition: background-color 1s ease;
+}
+
+table:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+/* input - Players Info */
+input {
+    width: 80%;
+    height: 60px;
+    
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+    border: 2px solid rgb(26, 25, 25);
+    background-color: rgb(59, 59, 59);
+    box-shadow: 8px 2px 16px rgb(17, 17, 17);
+
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+/* Input - Players name */
+#Players {
+    background-color: rgb(77, 77, 77);
+    width: 80%;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+
+/*Button - out*/
+.out {
+    background-color: rgb(30, 138, 9);
+    border: 3px solid rgb(43, 43, 43);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.5s ease, transform 0.5s ease, border-radius 0.5s ease;
+}
+
+.out:hover {
+  background-color: rgb(23, 99, 8);
+  transform: scale(1.1);
+  border-radius: 10px;
 }
